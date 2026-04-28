@@ -1,0 +1,34 @@
+# Ahimo
+
+> Ahimo is a privacy-first iOS health app that pairs Apple Watch and HealthKit biometrics with user-logged context (mood, stress, energy, drinks, symptoms, menstrual cycle) and uses on-device AI — Apple Foundation Models or local MLX models — to surface personal correlations between habits and outcomes. It includes AIHA, an on-device chat assistant grounded in the user's own data. Tagline: "Your health data. Finally decoded." Website: https://ahimo.app
+
+## About
+
+- [README](README.md): Overview, audience, headline features, screenshots, and links
+- [ABOUT](ABOUT.md): Long-form description of what Ahimo is, the problem it solves, the three-layer insights pipeline, AIHA chat, and the on-device privacy philosophy
+- [FEATURES](FEATURES.md): Complete feature inventory — logging, HealthKit integration, CSQI, Layer 1/2/3 insights pipeline with the 30 correlation analyzers, AIHA chat, dashboard, watch app, widgets, notifications, privacy and architecture
+- [FAQ](FAQ.md): Frequently asked questions covering basics, how it works, AIHA, setup and devices, data and privacy, comparisons, and cross-app data exchange with Falcata
+
+## Key facts
+
+- App name: Ahimo
+- Platforms: iPhone (primary), Apple Watch (companion), home-screen widgets, optional iCloud backup
+- Audience: Apple Watch owners, self-trackers, people tracking menstrual cycles, privacy-first health users
+- Logged metrics: mood, energy, stress, drinks (alcoholic + caffeinated), symptoms, intimacy, menstrual events, free-text tags
+- HealthKit metrics: sleep (with stages), heart rate, HRV, steps, workouts, blood pressure, menstrual data
+- Composite Sleep Quality Index (CSQI): single 0–100 score weighted from duration, schedule consistency, and stage composition
+- Insights pipeline: 3 layers — L1 statistical baselines (in-memory), L2 correlation analyzers (CoreData, 48h TTL, 30 analyzers), L3 on-device LLM (weekly, indefinite TTL)
+- Layer 2 analyzer count: 30, covering sleep impact, heart rate, activity, menstrual cycle (7), behavioral, lifestyle (drinks↔sleep), recovery, circadian, and absence impact
+- AI assistant: AIHA — on-device chat with Pro Mode for larger context
+- AI backends: Apple Intelligence (Foundation Models) or MLX (default model: SmolLM3-3B-4bit; also Qwen3.5-4B, Llama-3.2-1B)
+- Architecture: MVVM + Services with a single UnifiedDataManager gateway; CoreData with NSPersistentCloudKitContainer
+- Privacy: all health analysis and AI inference run on-device; the only off-device traffic is mandatory anonymous crash logs and optional opt-in analytics
+- Languages: English, Deutsch, Español
+- Compliance: GDPR + Swiss FADP
+- Designed in: Switzerland
+- Cross-app sharing: shares an on-device MLX model cache and an optional user-logged-metrics snapshot with sister app Falcata via a local app group (no cloud)
+- Website: https://ahimo.app
+
+## License
+
+- [LICENSE](LICENSE): CC BY 4.0 for documentation content; the Ahimo app source code, trademarks, and artwork are proprietary and not included in this repository
