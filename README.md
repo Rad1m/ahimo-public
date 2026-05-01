@@ -69,4 +69,4 @@ If you choose to enable iCloud backup, your data goes to **your** iCloud — App
 
 ---
 
-*Ahimo is a trademark of Ahimo Inc. Designed in Switzerland. This repository contains marketing and documentation content only — the app's source code is private. See [LICENSE](./LICENSE) for usage terms on the documentation content.*
+*Ahimo is built by [Radim Simanek](https://github.com/Rad1m) and is a trademark of Ahimo Inc. Designed in Switzerland. This repository contains marketing and documentation content only — the app's source code is private. See [LICENSE](./LICENSE) for usage terms on the documentation content.*

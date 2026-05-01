@@ -87,4 +87,4 @@ It is also built on a strict promise: your data is yours. The AI is real, the in
 
 ---
 
-Learn more at [ahimo.app](https://ahimo.app). Designed in Switzerland.
+Built by [Radim Simanek](https://github.com/Rad1m). Learn more at [ahimo.app](https://ahimo.app). Designed in Switzerland.
