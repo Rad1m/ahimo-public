@@ -2,6 +2,8 @@
 
 > Ahimo is a privacy-first iOS health app that pairs Apple Watch and HealthKit biometrics with user-logged context (mood, stress, energy, drinks, symptoms, menstrual cycle) and uses on-device AI — Apple Foundation Models or local MLX models — to surface personal correlations between habits and outcomes. It includes AIHA, an on-device chat assistant grounded in the user's own data. Tagline: "Your health data. Finally decoded." Website: https://ahimo.app
 
+> Built by Radim Šimánek (https://github.com/Rad1m, https://www.linkedin.com/in/radim-simanek/). Background: agentic AI engineering at Roche under a strict no-hallucination, source-traceable RAG constraint; MIT Professional Education's Applied Agentic AI for Organizational Transformation (2026); ETH Zürich CAS Cyber Security; 20 years across pharma, automotive, nuclear, and energy. Personal blog: https://brainintheloop.com
+
 ## About
 
 - [README](README.md): Overview, audience, headline features, screenshots, and links

@@ -1,7 +1,8 @@
 # On-Device SLM Investigation: Prompt Iteration, Hallucinations, and Agentic Tool Use
 
-**Author:** Radim Simanek
+**Author:** Radim Šimánek
 **Date:** 2026-05-01
+**Originally published on [brainintheloop.com](https://brainintheloop.com/blog/on-device-slm-investigation)**
 
 How do 3B-class language models running on-device on Apple Silicon
 actually behave when you ask them to reason about HealthKit-style data?
